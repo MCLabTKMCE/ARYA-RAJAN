@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_shadow_start_color"
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Number1"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="25dp" />
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/editText1"
+        android:hint="Enter Number2"
+        android:inputType="number"
+        android:layout_marginTop="22dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnsum"
+        android:text="SUM"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="130dp"
+        android:layout_below="@id/editText2"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnsub"
+        android:text="SUB"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="267dp"
+        android:layout_below="@id/button"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnmul"
+        android:text="MUL"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="325dp"
+        android:layout_below="@id/button2"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btndiv"
+        android:text="DIV"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="388dp"
+        android:layout_below="@id/button3"/>
+
+    <TextView
+        android:id="@+id/textres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESULT"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textStyle="normal|bold"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="388dp"
+        android:layout_below="@id/button4"/>
+</RelativeLayout>

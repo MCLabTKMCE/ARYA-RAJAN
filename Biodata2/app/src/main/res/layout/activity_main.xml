@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="                CREATE BIODATA" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="112dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="30dp"
+        android:text="NAME" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="112dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/name"
+        android:layout_marginTop="20dp"
+        android:text="ADDRESS" />
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/name"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/editaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/editname"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/name"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="112dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/address"
+        android:text="AGE" />
+
+    <EditText
+        android:id="@+id/editage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/editaddress"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/age"
+        android:inputType="number"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="112dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/age"
+        android:text="GENDER" />
+
+    <RadioGroup
+        android:id="@+id/Rgender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editage"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/gender">
+
+
+        <RadioButton
+            android:id="@+id/btnMale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MALE" />
+
+        <RadioButton
+            android:id="@+id/btnFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FEMALE" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="112dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/gender"
+        android:layout_marginTop="70dp"
+        android:text="PHONE" />
+
+    <EditText
+        android:id="@+id/editphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Rgender"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/phone"
+        android:ems="10"
+        android:inputType="number"
+        android:text="" />
+    <Button
+        android:id="@+id/btnS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:layout_marginTop="50dp"
+        android:onClick="btnSubmit"
+        android:text="SUBMIT"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <Button
+        android:id="@+id/btnR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/btnS"
+        android:onClick="btnReset"
+        android:text="RESET"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+
+</RelativeLayout>
+

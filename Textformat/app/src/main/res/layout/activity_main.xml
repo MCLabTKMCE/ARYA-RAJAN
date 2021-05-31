@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_shadow_start_color"
+    android:orientation="vertical"
+    android:padding="80dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Enter Text"
+        android:inputType="textPersonName"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <Button
+        android:id="@+id/btnS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit1"
+        android:layout_marginTop="66dp"
+        android:onClick="btnSize"
+        android:text="SIZE"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <Button
+        android:id="@+id/btnC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit1"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="66dp"
+        android:layout_toRightOf="@id/btnS"
+        android:onClick="btnColor"
+        android:text="COLOR"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <Button
+        android:id="@+id/btnR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnS"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="34dp"
+        android:onClick="btnReset"
+        android:text="RESET" />
+</RelativeLayout>
+
+
