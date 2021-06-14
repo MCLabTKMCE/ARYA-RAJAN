@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!-- first add two icons -->
+    <item
+        android:id="@+id/copy"
+        android:icon="@drawable/ic_copy"
+        android:title="copy"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share"
+        android:title="share"
+        app:showAsAction="always"
+        />
+    <item
+
+        android:id="@+id/setting"
+        android:title="setting"
+        />
+    <item
+        android:id="@+id/Detail"
+        android:title="Detail"
+        >
+        <!--details will create sub menu-->
+        <menu>
+            <item
+                android:id="@+id/about"
+                android:title="About"
+                />
+        </menu>
+    </item>
+</menu>
