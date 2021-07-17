@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cardview_shadow_start_color"
+    android:padding="80dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="200dp"
+        android:text="PICK DATE" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/button"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="320dp"/>
+
+</RelativeLayout>
